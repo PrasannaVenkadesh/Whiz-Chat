@@ -4,6 +4,8 @@ This is a team work of
 	S. Sathianarayanan(sathia2704@gmail.com) &
 	S. Prasanna Venkadesh (prasmailme@gmail.com)
 
+md5Checksum - 1ab9ca2dd12c1c4a21ea71ce3afe219d  chat.rb
+
 Step 1: Download the file 'chat.rb' from the repository
 
 Step 2: Make sure you have installed Ruby 1.8.x (Recommended) in your Linux box.

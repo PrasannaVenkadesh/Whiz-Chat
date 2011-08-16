@@ -1,4 +1,4 @@
-Whiz-Chat 1.0 is a ruby script through which terminal users can chat from terminal by using their account.
+Whiz-Chat 1.0 is a ruby script through which terminal users can chat from terminal by using their Gmail account.
 
 This is a team work of
 	S. Sathianarayanan(sathia2704@gmail.com) &

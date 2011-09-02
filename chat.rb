@@ -1,39 +1,28 @@
-<<<<<<< HEAD
+
 =begin
 	Application Name: Whiz-Chat
 	Version: 2.01
 	License: GPL V2.0
 =end
-=======
 
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 begin
 	 require 'rubygems'  		#Rubygems gem
 	 require 'colorize'		#gem used to set colors to text and backgrounds
 	 require 'xmpp4r-simple'	#Simple XML Protocol for Jabber API
 	 require "highline/import"	#for password protection
-<<<<<<< HEAD
 	 
 		 system('clear')
 	 	 system('espeak "Welcome. Dude" >/dev/null 2>&1')
 		 puts "Whiz Chat Version - 2.01\nDeveloped by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
-=======
-	 puts "Whiz Chat\nVersion - 2.0\t Developed by - S. Sathianarayanan(sathia2704@gmail.com)\nImproved by - S. Prasanna Venkadesh(prasmailme@gmail.com)\n".colorize( :grey ).on_blue.underline
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 		 print 'Enter the username :'
 		 username = gets.chomp		#Get input from username for user-id
 		 #gets password for mail account, ask from higline gem
 		 password = ask("Enter the password :" ) { |p| p.echo = "*" }
-<<<<<<< HEAD
 		 print 'To username: '
-=======
-		 print 'to address: '		
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 		 @to_username = gets.chomp  #prompt for userid to whom you want to chat with
 		 puts "Connecting to jabber server.."  
 		 @jabber = Jabber::Simple.new(username+'@gmail.com',password)  #using jabber api to connect with gmail account.
 		 system('clear')	#to clear the console screen to keep the screen clean.
-<<<<<<< HEAD
 		 system('espeak "Connected.." >/dev/null 2>&1')
 
 		 puts " Do you want to set Status Message (y) or (n)"
@@ -46,9 +35,6 @@ begin
 		
 		 system('clear')
 		 puts "You can now start chatting\nType bye to quit" 	#note you need to type 'bye' at terminal to quit the app.
-=======
-		 puts "Connected.\nType bye to quit" 	#note you need to type 'bye' at terminal to quit the app.
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 		 @mess	#a variable to get input message from you and also to quit from this chat.
 
 		#method to exit
@@ -91,11 +77,7 @@ begin
 		end	#end of receive method
 
 		t1=Thread.new { send() }		#instance for sending thread
-<<<<<<< HEAD
 		t2=Thread.new { receive() }		#instance for receiving thread
-=======
-		t2=Thread.new { receive() }	#instance for receiving thread
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 		t1.join					#when encounters sleep, jumps to thread t2
 		t2.join					#when encounters sleep, jumps to thread t1
 
@@ -105,10 +87,7 @@ begin
 		print 'Dependencies was not installed. Do you want to install (y) or not (n)'
 	 	a = gets.chomp
 		if( a == 'y')
-<<<<<<< HEAD
 		    system('sudo apt-get install rubygems1.8')
-=======
->>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 		    system('sudo gem install xmpp4r-simple')
 		    system('sudo gem install highline')
 		    system('sudo gem install colorize')

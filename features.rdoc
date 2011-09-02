@@ -5,10 +5,17 @@ Known Bugs:
 	1. If more than one user chats, then all the chats will be displayed messing up (Debugged in version 2.0)
 	2. Do not Works, if you are using proxy for your internet.
 	3. Throws some Interrupt exceptions.
+<<<<<<< HEAD
 -------------------------------------------------------------------------------------------------------------------
 Features of Whiz-chat - 2.0:
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Color differentiation between sender and reciever chat.
+=======
+
+Features of Whiz-chat - 2.0 (Current):
+	1. Basic sending and receiving messages between users by gmail account.
+	2. Added colors to display, differentiating messages between users.
+>>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 	3. Sound Alert on each received chat.
 
 Bugs Fixed:
@@ -18,6 +25,7 @@ Bugs Fixed:
 
 Known Bugs:
 	1. Do not works, if you are using proxy for your internet.
+<<<<<<< HEAD
 -------------------------------------------------------------------------------------------------------------------
 Features of Whiz-chat - 2.01 (Current):
 	1. Basic sending and receiving messages between users by gmail account.
@@ -27,5 +35,7 @@ Features of Whiz-chat - 2.01 (Current):
 
 No Bugs were fixed since version 2.0
 -------------------------------------------------------------------------------------------------------------------
+=======
+>>>>>>> cd28d606912fd77c4d73da172a9cd703fc40932a
 	
 

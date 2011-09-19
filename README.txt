@@ -1,8 +1,8 @@
 Whiz-Chat is a ruby script for Linux through which terminal users can chat from terminal by using their Gmail account.
 
 This is a team work of
-	S. Sathianarayanan(sathia2704@gmail.com) &
-	S. Prasanna Venkadesh (prasmailme@gmail.com)
+	S. Sathianarayanan(http://sathia27.wordpress.com/) &
+	S. Prasanna Venkadesh (http://prasopensource.wordpress.com/)
 
 md5Checksum - fc3f95f8dbb6ec09b2ec13930d405505  chat.rb
 

@@ -3,7 +3,7 @@ The Feature of latest release will be at the last.
 ------------------------------------------------------------------------------------------------------------------
 
 <b>Features of Whiz-chat - 1.0:</b>
-	1. Basic sending and receiving messages between users by gmail account.<br>
+	1. Basic sending and receiving messages between users by gmail account.
 
 <b>Known Bugs:</b>
 	1. If more than one user chats, then all the chats will be displayed messing up (Debugged in version 2.0)

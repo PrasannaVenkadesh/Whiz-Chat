@@ -4,7 +4,7 @@ This is a team work of
 	S. Sathianarayanan(http://sathia27.wordpress.com/) &
 	S. Prasanna Venkadesh (http://prasopensource.wordpress.com/)
 
-md5Checksum - fc3f95f8dbb6ec09b2ec13930d405505  chat.rb
+md5Checksum - bf7ed3306ab115750a94d9c541f8e16f  chat.rb
 
 Step 1: Download the file 'chat.rb' from the repository
 

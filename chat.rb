@@ -1,7 +1,7 @@
-
+#!/usr/bin/env ruby1.8
 =begin
 	Application Name: Whiz-Chat
-	Version: 2.01
+	Version: 2.2
 	License: GPL V2.0
 =end
 
@@ -10,14 +10,39 @@ begin
 	 require 'colorize'		#gem used to set colors to text and backgrounds
 	 require 'xmpp4r-simple'	#Simple XML Protocol for Jabber API
 	 require "highline/import"	#for password protection
+	 require 'gmail'		#for gmail access
 	 
 		 system('clear')
 	 	 system('espeak "Welcome. Dude" >/dev/null 2>&1')
-		 puts "Whiz Chat Version - 2.01\nDeveloped by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
+		 puts "Whiz Chat Version - 2.2".colorize(:yellow)
+		 puts "Developed by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
 		 print 'Enter the username :'
 		 username = gets.chomp		#Get input from username for user-id
 		 #gets password for mail account, ask from higline gem
 		 password = ask("Enter the password :" ) { |p| p.echo = "*" }
+		 
+		 def quit
+                        #type 'bye' in terminal after logging in, you will be logged out.
+            		system('reset')
+                        puts "You are now Disconnected"
+                        system('espeak "Bye Dude" >/dev/null 2>&1')
+                        exit()
+                 end
+	
+		 begin
+                        puts "Want to Chat or check Mail?\nc - chat\nm - mail\nq - quit"
+                        @opt = gets.chomp
+                        if(@opt == 'm')
+                                Gmail.connect(username, password) do  |gmail|
+                                        system('clear')
+                                        puts "You have "+ gmail.inbox.count(:unread).to_s + " unread mails"
+                                end
+                        end
+                        if(@opt == 'q')
+                                quit()
+                        end
+                 end while(@opt!='c')
+
 		 print 'To username: '
 		 @to_username = gets.chomp  #prompt for userid to whom you want to chat with
 		 puts "Connecting to jabber server.."  
@@ -25,7 +50,7 @@ begin
 		 system('clear')	#to clear the console screen to keep the screen clean.
 		 system('espeak "Connected.." >/dev/null 2>&1')
 
-		 puts " Do you want to set Status Message (y) or (n)"
+		 puts "Do you want to set Status Message (y) or (n)"
                  @choic = gets.chomp
                  if(@choic == 'y')
 			puts 'Whats in your mind: '.colorize(:red)
@@ -36,15 +61,6 @@ begin
 		 system('clear')
 		 puts "You can now start chatting\nType bye to quit" 	#note you need to type 'bye' at terminal to quit the app.
 		 @mess	#a variable to get input message from you and also to quit from this chat.
-
-		#method to exit
-		def quit
-			#type 'bye' in terminal after logging in, you will be logged out.
-			system('clear')
-			puts "Disconnected..."
-			system('espeak "Bye Dude" >/dev/null 2>&1')
-			exit()	
-		end
 
 		#method to get input from you and to send to person you are in chat with.
 		def send
@@ -96,6 +112,8 @@ begin
 	rescue Jabber::ClientAuthenticationFailure
 		print "Invalid username / password\n".colorize(:red) + "Run again\n".colorize(:yellow)
 
+	rescue Net::IMAP::BadResponseError
+		print "Invalid username / password\n".colorize(:green) + "Run again\n".colorize(:yellow)
 
 	#To handle interrupts
 	rescue Interrupt

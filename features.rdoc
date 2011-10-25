@@ -1,3 +1,7 @@
+The Features of this application are mentioned in the Chronological order, so that you can know what are the changes and improvements are made.
+The Feature of latest release will be at the last.
+------------------------------------------------------------------------------------------------------------------
+
 Features of Whiz-chat - 1.0:
 	1. Basic sending and receiving messages between users by gmail account.
 
@@ -8,9 +12,9 @@ Known Bugs:
 -------------------------------------------------------------------------------------------------------------------
 Features of Whiz-chat - 2.0:
 	1. Basic sending and receiving messages between users by gmail account.
-	2. Color differentiation between sender and reciever chat.
+	2. Color differentiation between sender and receiver chat.
 
-Features of Whiz-chat - 2.0 (Current):
+Features of Whiz-chat - 2.0:
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Added colors to display, differentiating messages between users.
 	3. Sound Alert on each received chat.
@@ -23,11 +27,22 @@ Bugs Fixed:
 Known Bugs:
 	1. Do not works, if you are using proxy for your internet.
 -------------------------------------------------------------------------------------------------------------------
-Features of Whiz-chat - 2.01 (Current):
+Features of Whiz-chat - 2.01:
 	1. Basic sending and receiving messages between users by gmail account.
-	2. Color differentiation between sender and reciever chat.
+	2. Color differentiation between sender and receiver chat.
 	3. Welcome message, Sound Alert on each received chat, Terminating alert.
 	** 4. Setting the status message for your account.
 
 No Bugs were fixed since version 2.0
+------------------------------------------------------------------------------------------------------------------
+Features of Whiz-chat - 2.2 (Current):
+	1. Basic sending and receiving messages between users by gmail account.
+	2. Color differentiation between sender and receiver chat.
+	3. Welcome message. Sound Alert on each received chat, Terminatting alert.
+	4. Setting the status message for your account.
+	**5. You can check the status of your mail of your same account.
+	**6. A menu drive start-up, where you can check status of mail and quit or you can Chat and quit.
+
+Bugs:
+	The one and only known bug of not working under proxy still remains, and we are working on it.
 ------------------------------------------------------------------------------------------------------------------

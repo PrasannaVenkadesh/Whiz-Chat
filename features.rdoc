@@ -2,7 +2,7 @@ The Features of this application are mentioned in the Chronological order, so th
 The Feature of latest release will be at the last.
 ------------------------------------------------------------------------------------------------------------------
 
-Features of Whiz-chat - 1.0:<br>
+<b>Features of Whiz-chat - 1.0:</b> <br>
 	1. Basic sending and receiving messages between users by gmail account.<br>
 
 Known Bugs:<br>

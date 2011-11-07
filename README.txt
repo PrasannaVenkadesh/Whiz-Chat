@@ -22,13 +22,18 @@ Step 7: Enter your Google mail account user_id alone (Eg:prasmailme) and dont ad
 
 Step 8: Enter the password for your account.
 
-Step 9:  In 'to address: ' type the recepient user_id like above in Step 6.
+Step 9: Now you will be displayed with a menu and you can choose one from the menu using the corresponding options.
 
-Step 10: If everything went fine you have will be ready to send or receive messages, or else exceptions will be thrown for User_id / Password mismatch.
+Step 10: When you choose to chat - In 'to address: ' type the recepient user_id like above in Step 7.
 
-Step 11: Type 'bye' to quit from chat, the message bye will also be delivered for the receiver.
+Step 11: If everything went fine you have will be ready to send or receive messages, or else exceptions will be thrown for User_id / Password mismatch.
+
+Step 12: Type 'bye' to quit from chat, the message bye will also be delivered for the receiver.
 
 We have a list of features. Check features.rdoc file.
 Please do help us by mailing the bugs you find.
 
-Note: We have used 'espeak' to make sound alerts and it comes as default in ubuntu 10.10 and 11.04, so if you are using some other distro or versions of linux see to that you have got that tool installed or install it manually.
+Note: We have used 'espeak' to make sound alerts and it comes as default in ubuntu 10.10 and 11.04, so if you are using some other distro or versions of linux see to that you have got that tool installed or install it manually using the following command:
+Debian / Ubuntu distro's:  sudo apt-get install espeak
+Redhat / Fedora / CentOS : Search in repository for espeak, they have their own 'rpm' package for espeak.
+

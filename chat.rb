@@ -11,15 +11,16 @@ begin
 	 require 'xmpp4r-simple'	#Simple XML Protocol for Jabber API
 	 require "highline/import"	#for password protection
 	 require 'gmail'		#for gmail access
+	 require "Contacts"
 	 
 		 system('clear')
 	 	 system('espeak "Welcome. Dude" >/dev/null 2>&1')
-		 puts "Whiz Chat Version - 2.2".colorize(:yellow)
+		 puts "Whiz Chat Version - 2.3".colorize(:yellow)
 		 puts "Developed by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
-		 print 'Enter the username :'
+		 print 'Enter your Gmail Username :'
 		 username = gets.chomp		#Get input from username for user-id
 		 #gets password for mail account, ask from higline gem
-		 password = ask("Enter the password :" ) { |p| p.echo = "*" }
+		 password = ask("Enter your password :" ) { |p| p.echo = "*" }
 		 
 		 def quit
                         #type 'bye' in terminal after logging in, you will be logged out.
@@ -39,11 +40,15 @@ begin
                                 end
                         end
                         if(@opt == 'q')
-                                quit()
+                                quit
                         end
                  end while(@opt!='c')
 
-		 print 'To username: '
+
+		 login = Login.new
+		 login.do_login(username,password)
+	 	 puts "\n"
+		 print 'To Username: '
 		 @to_username = gets.chomp  #prompt for userid to whom you want to chat with
 		 puts "Connecting to jabber server.."  
 		 @jabber = Jabber::Simple.new(username+'@gmail.com',password)  #using jabber api to connect with gmail account.
@@ -70,7 +75,7 @@ begin
 				@jabber.deliver(@to_username+"@gmail.com", @mess)
 				sleep(1)	#for multithreading
 			end
-			quit()
+			quit
 		end
 	
 		#method to read and display the message from sender
@@ -89,7 +94,7 @@ begin
 					end
 			    	end
 			end
-			quit()
+			#quit
 		end	#end of receive method
 
 		t1=Thread.new { send() }		#instance for sending thread
@@ -104,9 +109,9 @@ begin
 	 	a = gets.chomp
 		if( a == 'y')
 		    system('sudo apt-get install rubygems1.8')
-		    system('sudo gem install xmpp4r-simple')
-		    system('sudo gem install highline')
-		    system('sudo gem install colorize')
+		    system('gem install xmpp4r-simple')
+		    system('gem install highline')
+		    system('gem install colorize')
 		end
 
 	rescue Jabber::ClientAuthenticationFailure

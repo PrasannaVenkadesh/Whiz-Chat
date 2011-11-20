@@ -4,13 +4,13 @@ This is a team work of
 	S. Sathianarayanan(http://sathia27.wordpress.com/) &
 	S. Prasanna Venkadesh (http://prasopensource.wordpress.com/)
 
-md5Checksum - bf7ed3306ab115750a94d9c541f8e16f  chat.rb
+md5checksum - 56950b231f1f8e64c6bf07924beaf426  chat.rb
 
 Step 1: Download the file 'chat.rb' from the repository
 
 Step 2: Make sure you have installed Ruby 1.8.x (Recommended) in your Linux box and have installed Rubygems1.8 (Recommended).
 
-Step 3: Run the Ruby script like 'ruby chat.rb' from your terminal.
+Step 3: Run the Ruby script like './chat.rb' or 'ruby1.8 chat.rb' from your terminal.
 
 Step 4: Dependencies need to be satisfied for the first time, so type 'y' to satisfy dependencies from Internet.
 

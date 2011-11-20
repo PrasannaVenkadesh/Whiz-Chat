@@ -9,7 +9,7 @@ The Feature of latest release will be at the last.
 	1. If more than one user chats, then all the chats will be displayed messing up (Debugged in version 2.0)
 	2. Do not Works, if you are using proxy for your internet.
 	3. Throws some Interrupt exceptions.
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 <b>Features of Whiz-chat - 2.0:</b>
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Added colors to display, differentiating messages between users.
@@ -22,7 +22,7 @@ The Feature of latest release will be at the last.
 
 <b>Known Bugs:</b>
 	1. Do not works, if you are using proxy for your internet.
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 <b>Features of Whiz-chat - 2.01:</b>
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Color differentiation between sender and receiver chat.
@@ -31,7 +31,7 @@ The Feature of latest release will be at the last.
 
 No Bugs were fixed since version 2.0
 ------------------------------------------------------------------------------------------------------------------
-<b>Features of Whiz-chat - 2.2 (Current):</b>
+<b>Features of Whiz-chat - 2.2:</b>
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Color differentiation between sender and receiver chat.
 	3. Welcome message. Sound Alert on each received chat, Terminatting alert.
@@ -40,5 +40,21 @@ No Bugs were fixed since version 2.0
 	**6. A menu drive start-up, where you can check status of mail and quit or you can Chat and quit.</i>
 
 <b>Bugs:</b>
-	The one and only known bug of not working under proxy still remains, and we are working on it.
+	1. The known bug of not working under proxy still remains, and we are working on it.
+	2. Dependencies being installed again and again.
+------------------------------------------------------------------------------------------------------------------
+<b>Features of Whiz-chat - 2.3 (Current):</b>
+	1. Basic sending and receiving messages between users by gmail account.
+        2. Color differentiation between sender and receiver chat.
+        3. Welcome message. Sound Alert on each received chat, Terminatting alert.
+        4. Setting the status message for your account.
+	5. You can check the status of your mail of your same account.
+        6. A menu drive start-up, where you can check status of mail and quit or you can Chat and quit.
+<i>	**7. Displays a list of Instant Contacts (they may be online or may not be online, but they are displayed in the order like what it will be displayed in Gmail Chat plugin, so online contacts will be at top priority in the list).</i>
+
+<b>Bugs Fixed:</b>
+	1. Dependencies being installed again and again. (Hope it is fixed, please report if it happens again).
+
+<b>Bugs:</b>
+	1. The known bug of not working under proxy still remains, and we are working on it.
 ------------------------------------------------------------------------------------------------------------------

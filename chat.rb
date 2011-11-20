@@ -105,14 +105,8 @@ begin
 
 	#for first time users who have not installed the required gems, this method will be run only once
 	rescue LoadError
-		print 'Dependencies was not installed. Do you want to install (y) or not (n)'
-	 	a = gets.chomp
-		if( a == 'y')
-		    system('sudo apt-get install rubygems1.8')
-		    system('gem install xmpp4r-simple')
-		    system('gem install highline')
-		    system('gem install colorize')
-		end
+		puts "Please execute the install.sh file before running this file.\nUse 'sudo sh install.sh' to execute"
+
 
 	rescue Jabber::ClientAuthenticationFailure
 		print "Invalid username / password\n".colorize(:red) + "Run again\n".colorize(:yellow)

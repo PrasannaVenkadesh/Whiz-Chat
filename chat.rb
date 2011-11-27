@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 =begin
 	Application Name: Whiz-Chat
-	Version: 2.31
+	Version: 2.50
 	License: GPL V2.0
+	Developers: S.Sathianarayanan, S.Prasanna Venkadesh
 =end
 
 begin
@@ -10,12 +11,12 @@ begin
 	 require 'colorize'		#gem used to set colors to text and backgrounds
 	 require 'xmpp4r-simple'	#Simple XML Protocol for Jabber API
 	 require "highline/import"	#for password protection
-	 require 'gmail'		#for gmail access
+	 require "mail_check"		#for gmail access
 	 require "Contacts"
 	 
 		 system('clear')
 	 	 system('espeak "Welcome. Dude" >/dev/null 2>&1')
-		 puts "Whiz Chat Version - 2.31".colorize(:yellow)
+		 puts "Whiz Chat Version - 2.50".colorize(:yellow)
 		 puts "Developed by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
 		 print 'Enter your Gmail Username :'
 		 username = gets.chomp		#Get input from username for user-id
@@ -34,10 +35,9 @@ begin
                         puts "Want to Chat or check Mail?\nc - chat\nm - mail\nq - quit"
                         @opt = gets.chomp
                         if(@opt == 'm')
-                                Gmail.connect(username, password) do  |gmail|
-                                        system('clear')
-                                        puts "You have "+ gmail.inbox.count(:unread).to_s + " unread mails"
-                                end
+                                 system('clear')
+				 mailcheck = Check.new
+				 mailcheck.do_check(username,password)
                         end
                         if(@opt == 'q')
                                 quit
@@ -72,7 +72,7 @@ begin
 			while @mess!="bye" do	#repeat until the user want to quit
 				@mess = gets.chomp	 #to get input message from user to chat
 				#method to send the message of user to recipeint.
-				@jabber.deliver(@to_username+"@gmail.com", @mess)
+				@jabber.deliver(@to_username, @mess)
 				sleep(1)	#for multithreading
 			end
 			quit
@@ -84,7 +84,7 @@ begin
 			while @mess!="bye" do
 				#method that reads the revceived message and puts in msg variable
 				@jabber.received_messages do |msg| 
-					if msg.from.node == @to_username
+					if msg.from.node+'@'+msg.from.domain == @to_username
 						puts "=============================================="  			
 						puts  @to_username.colorize(:color => :black,:background => :yellow) +": " + msg.body.colorize(:green) 	#display message in screen
 						puts Time.now.to_s.colorize(:gray)						#display the time of message received

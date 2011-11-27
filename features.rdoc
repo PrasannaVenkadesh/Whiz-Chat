@@ -58,7 +58,7 @@ No Bugs were fixed since version 2.0
 <b>Bugs:</b>
 	1. The known bug of not working under proxy still remains, and we are working on it.
 ------------------------------------------------------------------------------------------------------------------
-<b>Features of Whiz-chat - 2.31 (Current):</b>
+<b>Features of Whiz-chat - 2.31:</b>
 	1. Basic sending and receiving messages between users by gmail account.
 	2. Color differentiation between sender and receiver chat.
 	3. Welcome message. Sound Alert on each received chat, Terminatting alert.
@@ -70,4 +70,11 @@ No Bugs were fixed since version 2.0
 
 <b>Bugs:</b>
 	1. The known bug of not working under proxy still remains, and we are working on it.
+------------------------------------------------------------------------------------------------------------------
+<b>Features of Whiz-chat - 2.50 (Current):</b>
+	New features added
+<i>	**9. Two E-mail features have been added. Don't forget to check it. </i>
+
+<b>Bugs</b>
+	Not working under proxy.
 ------------------------------------------------------------------------------------------------------------------

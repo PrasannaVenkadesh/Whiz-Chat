@@ -1,10 +1,11 @@
 Whiz-Chat is a ruby script for Linux through which terminal users can chat from terminal by using their Gmail account.
+This is released under the Gnu GPL V2.0 License so that anyone can make code contributions and other sort of contributions.
 
 This is a team work of
 	S. Sathianarayanan(http://lquery.com) &
 	S. Prasanna Venkadesh (http://prasopensource.wordpress.com/)
 
-md5checksum - 372b59b83e856e3f3f4eb741c021ddd0  chat.rb
+md5checksum - 1d9d396f942c64e9f8182cf2cc397433  chat.rb
 
 Step 1: Download either tar.gz or .zip file from Download section or you can also download each file individually.
 
@@ -14,15 +15,16 @@ Step 3: Now run the fedora_install.sh or ubuntu_install.sh shell script accordin
 
 Step 4: Run the Ruby script like './chat.rb' or 'ruby chat.rb' from your terminal.
 
-Step 5: Enter your Google mail account user_id alone (Eg:prasmailme) and dont add (@gmail.com), it will be automatically appended.
+Step 5: Enter your Google mail account user_id alone (Eg:prasmailme) and don't add (@gmail.com), it will be automatically appended.
 
 Step 6: Enter the password for your account.
 
 Step 7: Now you will be displayed with a menu and you can choose one from the menu using the corresponding options.
 
-Step 8: When you choose to chat - In 'To Username: ' type the recepient user_id like above in Step 6.
+Step 8: When you choose to chat - In 'To Username: ' type the recepient user_id fully (Eg:prasmailme@gmail.com).
+This is because now we have added a feature to chat with other domains also from gmail account (Provided domain service provider offers chat option. Facebook and Yahoo are not currently supported now.).
 
-Step 9: If everything went fine you have will be ready to send or receive messages, or else exceptions will be thrown for User_id / Password mismatch.
+Step 9: If everything went fine you have will be able to send or receive messages, or else exceptions will be thrown for User_id / Password mismatch.
 
 Step 10: Type 'bye' to quit from chat, the message bye will also be delivered for the receiver and you will be disconnected
 
@@ -30,4 +32,3 @@ We have a list of features. Check features.rdoc file.
 Please do help us by mailing the bugs you find.
 
 Note: We have used 'espeak' to make sound alerts and it comes as default in ubuntu 10.10 and 11.04.
-

@@ -1,4 +1,4 @@
-#sudo apt-get install libopenssl-ruby libreadline-ruby1.8 rdoc ri ruby ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libruby1.8 libxslt-dev libxml2-dev espeak
+sudo apt-get install libopenssl-ruby libreadline-ruby1.8 rdoc ri ruby ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libruby1.8 libxslt-dev libxml2-dev espeak
 wget http://production.cf.rubygems.org/rubygems/rubygems-1.3.6.tgz
 tar xzvf rubygems-1.3.6.tgz
 cd rubygems-1.3.6

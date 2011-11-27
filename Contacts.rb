@@ -4,7 +4,7 @@ Date Written: 16/08/2011
 Date Modified: 17/08/2011
 Author : Sathianarayanan.S
 License: GPL2.0
-Version: 1.1
+Version: 1.2
 =end
 class Login
 	

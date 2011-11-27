@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 =begin
 	Application Name: Whiz-Chat
-	Version: 2.2
+	Version: 2.31
 	License: GPL V2.0
 =end
 
@@ -15,7 +15,7 @@ begin
 	 
 		 system('clear')
 	 	 system('espeak "Welcome. Dude" >/dev/null 2>&1')
-		 puts "Whiz Chat Version - 2.3".colorize(:yellow)
+		 puts "Whiz Chat Version - 2.31".colorize(:yellow)
 		 puts "Developed by- S. Sathianarayanan (sathia2704@gmail.com)\nImproved by- S. Prasanna Venkadesh (prasmailme@gmail.com)\nGithub Repository: https://github.com/PrasannaVenkadesh/Whiz-Chat\n".colorize( :blue ).underline
 		 print 'Enter your Gmail Username :'
 		 username = gets.chomp		#Get input from username for user-id

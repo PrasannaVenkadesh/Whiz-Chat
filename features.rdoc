@@ -43,7 +43,7 @@ No Bugs were fixed since version 2.0
 	1. The known bug of not working under proxy still remains, and we are working on it.
 	2. Dependencies being installed again and again.
 ------------------------------------------------------------------------------------------------------------------
-<b>Features of Whiz-chat - 2.3 (Current):</b>
+<b>Features of Whiz-chat - 2.3:</b>
 	1. Basic sending and receiving messages between users by gmail account.
         2. Color differentiation between sender and receiver chat.
         3. Welcome message. Sound Alert on each received chat, Terminatting alert.
@@ -54,6 +54,19 @@ No Bugs were fixed since version 2.0
 
 <b>Bugs Fixed:</b>
 	1. Dependencies being installed again and again. (Hope it is fixed, please report if it happens again).
+
+<b>Bugs:</b>
+	1. The known bug of not working under proxy still remains, and we are working on it.
+------------------------------------------------------------------------------------------------------------------
+<b>Features of Whiz-chat - 2.31 (Current):</b>
+        1. Basic sending and receiving messages between users by gmail account.
+        2. Color differentiation between sender and receiver chat.
+        3. Welcome message. Sound Alert on each received chat, Terminatting alert.
+        4. Setting the status message for your account.
+        5. You can check the status of your mail of your same account.
+        6. A menu drive start-up, where you can check status of mail and quit or you can Chat and quit.
+        7. Displays a list of Instant Contacts (they may be online or may not be online, but they are displayed in the order like what it will be$
+<i>	**8. Works both on Fedora and Ubuntu. Tested on Ubuntu 10.04 / 10.10 / 11.04 / 11.10, LinuxMint 11 and Fedora 16. </i>
 
 <b>Bugs:</b>
 	1. The known bug of not working under proxy still remains, and we are working on it.

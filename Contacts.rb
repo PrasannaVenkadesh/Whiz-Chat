@@ -2,7 +2,7 @@
 Program name: Gmail contacts
 Date Written: 16/08/2011
 Date Modified: 17/08/2011
-Author : Sathianarayanan.S
+Author : Sathianarayanan.S, Prasanna Venkadesh
 License: GPL2.0
 Version: 1.2
 =end

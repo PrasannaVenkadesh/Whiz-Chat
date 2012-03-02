@@ -1,5 +1,6 @@
 Whiz-Chat is a ruby script for Linux through which terminal users can chat from terminal by using their Gmail account.
-This is released under the Gnu GPL V2.0 License so that anyone can make code contributions and other sort of contributions.
+This is released under the Gnu GPL V3.0 License so that anyone can make code contributions and other sort of contributions.
+Check the file named COPYING to know more about the license.
 
 This is a team work of
 	S. Sathianarayanan(http://lquery.com) &

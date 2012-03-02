@@ -2,8 +2,9 @@
 =begin
 	Application Name: Whiz-Chat
 	Version: 2.50
-	License: GPL V2.0
+	License: GPL V3.0
 	Developers: S.Sathianarayanan, S.Prasanna Venkadesh
+	Copyright 2010-2012 Prasanna Venkadesh & Sathianarayanan
 =end
 
 begin

@@ -5,7 +5,7 @@ This is a team work of
 	S. Sathianarayanan(http://lquery.com) &
 	S. Prasanna Venkadesh (http://prasopensource.wordpress.com/)
 
-md5checksum - 1d9d396f942c64e9f8182cf2cc397433  chat.rb
+md5checksum - 6b5e39c17444fd10e4f68d35d6f33d69  chat.rb
 
 Step 1: Download either tar.gz or .zip file from Download section or you can also download each file individually.
 
